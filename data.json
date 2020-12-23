@@ -1,0 +1,147 @@
+{
+    "events": {
+        "FIRST_PART_SPOTTED": "First Part Spotted",
+        "STACKING_BEGINS": "Stacking Begins",
+        "STACKING_ENDS": "Stacking Completed",
+        "ROLL_TO_LAUNCH_PAD": "Roll To Launch Pad",
+        "STATIC_FIRE": "Static Fire",
+        "LAUNCH": "Launch!",
+        "LANDING": "Successful Landing",
+        "RUD": "RUD",
+        "MILESTONE": "Milestone"
+    },
+    "timeline": [
+        {
+            "year": 2019,
+            "month": 1,
+            "day": 11,
+            "vechile": "MK 1",
+            "type": "STACKING_ENDS",
+            "picture": "./pictures/mk1.jpeg",
+            "credit": "spacex",
+            "source": "https://twitter.com/elonmusk/status/1083567087983964160"
+        },
+        {
+            "year": 2020,
+            "month": 4,
+            "day": 24,
+            "vechile": "SN 5",
+            "type": "STACKING_BEGINS",
+            "picture": "https://forum.nasaspaceflight.com/index.php?action=dlattach;topic=48895.0;attach=1627982;image",
+            "credit": "BocaChicaGal",
+            "source": "https://forum.nasaspaceflight.com/index.php?topic=48895.msg2072384#msg2072384"
+        },
+        {
+            "year": 2020,
+            "month": 7,
+            "day": 4,
+            "vechile": "SN 8",
+            "type": "FIRST_PART_SPOTTED",
+            "picture": "https://pbs.twimg.com/media/EcFzloRXkAATcem?format=jpg&name=large",
+            "credit": "BocaChicaGal",
+            "source": "https://twitter.com/BocaChicaGal/status/1279430872417083400"
+        },
+        {
+            "year": 2020,
+            "month": 7,
+            "day": 10,
+            "vechile": "SN 8",
+            "type": "STACKING_BEGINS",
+            "picture": "https://pbs.twimg.com/media/EchyiQoXoAsW3q0?format=jpg&name=large",
+            "credit": "BocaChicaGal",
+            "source": "https://twitter.com/BocaChicaGal/status/1281400070794084352"
+        },
+        {
+            "year": 2020,
+            "month": 8,
+            "day": 5,
+            "vechile": "SN 5",
+            "type": "LAUNCH",
+            "picture": "https://pbs.twimg.com/media/EesGmrMXsAYjWeY?format=jpg&name=large",
+            "credit": "hopper",
+            "source": "https://twitter.com/thesheetztweetz/status/1291132984070934528"
+        },
+        {
+            "year": 2020,
+            "month": 8,
+            "day": 5,
+            "vechile": "SN 5",
+            "type": "MILESTONE",
+            "notes": "150 meters",
+            "picture": "https://pbs.twimg.com/media/EencOImWsAA_Z77?format=jpg&name=large",
+            "credit": "Trevor Mahlmann",
+            "source": "https://twitter.com/SciGuySpace/status/1290804907814117379"
+        },
+        {
+            "year": 2020,
+            "month": 9,
+            "day": 13,
+            "vechile": "SN 9",
+            "type": "STACKING_BEGINS",
+            "picture": "https://pbs.twimg.com/media/Ehz7nbGXkAI0wIh?format=jpg&name=large",
+            "credit": "BocaChicaGal",
+            "source": "https://twitter.com/BocaChicaGal/status/1305194656993611776"
+        },
+        {
+            "year": 2020,
+            "month": 9,
+            "day": 26,
+            "vechile": "SN 8",
+            "type": "ROLL_TO_LAUNCH_PAD",
+            "picture": "https://pbs.twimg.com/media/Ei2b1QxVgAEXLU8?format=jpg&name=medium",
+            "credit": "LabPadre",
+            "source": "https://twitter.com/LabPadre"
+        },
+        {
+            "year": 2020,
+            "month": 10,
+            "day": 28,
+            "vechile": "SN 8",
+            "type": "STACKING_ENDS",
+            "picture": "https://pbs.twimg.com/media/ElAirLMXYAAgJyn?format=jpg&name=large",
+            "credit": "NASASpaceflight",
+            "source": "https://twitter.com/NASASpaceflight"
+        },
+        {
+            "year": 2020,
+            "month": 12,
+            "day": 9,
+            "vechile": "SN 8",
+            "type": "LAUNCH",
+            "picture": "./pictures/sn8-launch.jpg",
+            "credit": "spacex",
+            "source": "https://spacex.com"
+        },
+        {
+            "year": 2020,
+            "month": 12,
+            "day": 9,
+            "vechile": "SN 8",
+            "type": "MILESTONE",
+            "notes": "First ever belly flop",
+            "picture": "./pictures/sn8-flop.jpg",
+            "credit": "spacex",
+            "source": "https://spacex.com"
+        },
+        {
+            "year": 2020,
+            "month": 12,
+            "day": 9,
+            "vechile": "SN 8",
+            "type": "RUD",
+            "picture": "./pictures/sn8-rud.jpg",
+            "credit": "Cosmic Perspective",
+            "source": "https://twitter.com/considercosmos/status/1337176151865831424"
+        },
+        {
+            "year": 2020,
+            "month": 12,
+            "day": 22,
+            "vechile": "SN 9",
+            "type": "ROLL_TO_LAUNCH_PAD",
+            "picture": "./pictures/sn9-pad.jpg",
+            "credit": "RGV Aerial Photography",
+            "source": "https://twitter.com/RGVaerialphotos/status/1341526260422479872"
+        }
+    ]
+}

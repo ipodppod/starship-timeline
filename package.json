@@ -1,0 +1,15 @@
+{
+  "name": "starship-timeline",
+  "version": "1.0.0",
+  "description": "data source and frontend to show timeline and stats of starship development.",
+  "main": "generate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Moshe Levine",
+  "license": "ISC",
+  "dependencies": {
+    "jsonfile": "^6.1.0",
+    "liquid": "^5.1.1"
+  }
+}

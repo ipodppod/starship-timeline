@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400&display=swap');
+
+html {
+    font-family: 'IBM Plex Mono', monospace;
+    background: white;
+    color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+}
+
+body {
+    overscroll-behavior-y: none;
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    left: 50px;
+    z-index: 1;
+}
+nav h2 {
+    margin: 15px 0;
+    font-weight: 200;
+    font-size: 26px;
+}
+nav h3 {
+    margin: 15px 0;
+    font-weight: 200;
+    font-size: 12px;
+}
+nav ul li {
+    padding: 15px;
+    padding-left: 75px;
+    border-left: 1px solid black;
+    font-size: 10px;
+    font-weight: 200;
+    width: 200px;
+    position: relative;
+}
+nav ul strong {
+    font-weight: 400;
+}
+nav ul li.active {
+    /* border-left: 5px solid black;
+    margin-left: -4px; */
+    /* background-color: #f06eaa87;; */
+    /* background-color: #ffdf0087;; */
+}
+nav ul li.active::after {
+    content: '';
+    display: block;
+    width: calc(100% + 50px);
+    height: 100%;
+    background-color: #ffdf0087;
+    position: absolute;
+    left: -50px;
+    top: 0;
+    z-index: -1;
+}
+nav ul li .date {
+    font-size: 10px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    height: 100%;
+    width: 52px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li .icon.star {
+    display: inline-block;
+    vertical-align: middle;
+    width: 12px;
+    height: 12px;
+    background: url(assets/star.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+nav ul li .subject {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 75px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li .subject span.vechile {
+    border: 1px solid black;
+    border-radius: 8px;
+    display: inline-block;
+    padding: 2px 8px;
+    font-weight: 400;
+}
+nav ul li img {
+    display: none;
+}
+
+.gallery {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100vw - 340px);
+    z-index: 0;
+}
+.gallery .event {
+    width: 100%;
+    height: calc(100vh);
+    position: relative;
+}
+.gallery .event .image {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+body.compact-mode .gallery .event .image {
+    left: 50%;
+    top: 40%;
+    width: 540px;
+    height: 300px;
+    transform: translateX(-50%) translateY(-50%) rotate(-1deg);
+}
+.gallery .event .details {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 10px;
+    color: white;
+    font-weight: 200;
+}
+.gallery .event:not(:hover) .details {
+    display: none;
+}
+.gallery .event .details > * {
+    display: inline-block;
+    padding: 4px 8px;
+    background: black;
+    margin-bottom: -4px;
+}
+.gallery .event .details .vechile {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.gallery .event .details strong {
+    font-weight: 400;
+}
+.gallery .event .details .date {
+    text-transform: uppercase;
+}
+.gallery .event .details .credit {
+    text-transform: lowercase;
+}

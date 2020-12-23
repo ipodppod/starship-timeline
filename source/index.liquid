@@ -1,0 +1,72 @@
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            {% for event in timeline %}
+                {% assign datebreak = false %}
+                {% if event.year != year or event.month != month %}
+                    {% assign datebreak = true %}
+                    </ul>
+                {% endif %}
+                {% if event.year != year %}
+                    <h2>{{ event.year }}</h2>
+                {% endif %}
+                {% if event.month != month %}
+                    <h3>{{ event.date | date: "%B"  }}</h3>
+                {% endif %}
+                {% if datebreak %}
+                    <ul>
+                {% endif %}
+                <li>
+                    {% if event.day != day or datebreak %}
+                        <span class="date">{{ event.day }}</span>
+                    {% endif %}
+                    <span class="subject">
+                        {% if event.type == "MILESTONE" %}
+                            <span class="icon star"></span>
+                        {% else %}
+                            <span class="vechile">{{ event.vechile }}</span>
+                        {% endif %}
+                    </span>
+                    {% if event.type != "MILESTONE" %}
+                        <strong>{{ events[event.type] }}</strong>
+                    {% endif %}
+                    {% if event.notes %}
+                        <p>{{ event.notes }}</p>
+                    {% endif %}
+                </li>
+            {% assign day = event.day %}
+            {% assign year = event.year %}
+            {% assign month = event.month %}
+            {% endfor %}
+        </ul>
+    </nav>
+    
+    <section class="gallery">
+        {% for event in timeline %}
+            <div class="event">
+                <div class="image" style="background-image: url({{ event.picture }});"></div>
+                <div class="details">
+                    <span class="date">{{ event.date | date: "%B %e, %Y" }}</span><br>
+                    <span class="vechile">
+                        {% if event.type == "MILESTONE" %}
+                            <strong>Milestone</strong>
+                            {{ event.notes }}
+                        {% else %}
+                            <strong>{{ event.vechile }}</strong>
+                            {{ events[event.type] }}
+                        {% endif %}
+                    </span><br/>
+                    <div class="credit">
+                        credit: <a href="{{ event.source }}">{{ event.credit }}</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </section>
+
+</body>
