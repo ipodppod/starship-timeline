@@ -4,6 +4,7 @@
   "description": "data source and frontend to show timeline and stats of starship development.",
   "main": "generate.js",
   "scripts": {
+    "build": "node generate.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Moshe Levine",
