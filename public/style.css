@@ -151,9 +151,6 @@ body.compact-mode .gallery .event .image {
     color: white;
     font-weight: 200;
 }
-.gallery .event:not(:hover) .details {
-    display: none;
-}
 .gallery .event .details > * {
     display: inline-block;
     padding: 4px 8px;
