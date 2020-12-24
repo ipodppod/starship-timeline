@@ -7,7 +7,7 @@
 
     <nav>
         <ul>
-            {% for event in timeline %}
+            {% for event in events %}
                 {% assign datebreak = false %}
                 {% if event.year != year or event.month != month %}
                     {% assign datebreak = true %}
@@ -34,7 +34,7 @@
                         {% endif %}
                     </span>
                     {% if event.type != "MILESTONE" %}
-                        <strong>{{ events[event.type] }}</strong>
+                        <strong>{{ event_types[event.type] }}</strong>
                     {% endif %}
                     {% if event.notes %}
                         <p>{{ event.notes }}</p>
@@ -48,7 +48,7 @@
     </nav>
     
     <section class="gallery">
-        {% for event in timeline %}
+        {% for event in events %}
             <div class="event">
                 <div class="image" style="background-image: url({{ event.picture }});"></div>
                 <div class="details">
@@ -59,7 +59,7 @@
                             {{ event.notes }}
                         {% else %}
                             <strong>{{ event.vehicle }}</strong>
-                            {{ events[event.type] }}
+                            {{ event_types[event.type] }}
                         {% endif %}
                     </span><br/>
                     <div class="credit">

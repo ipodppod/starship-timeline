@@ -1,5 +1,5 @@
 {
-    "events": {
+    "event_types": {
         "FIRST_PART_SPOTTED": "First Part Spotted",
         "STACKING_BEGINS": "Stacking Begins",
         "STACKING_ENDS": "Stacking Completed",
@@ -10,7 +10,7 @@
         "RUD": "RUD",
         "MILESTONE": "Milestone"
     },
-    "timeline": [
+    "events": [
         {
             "year": 2019,
             "month": 1,
