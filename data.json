@@ -54,6 +54,16 @@
         },
         {
             "year": 2020,
+            "month": 5,
+            "day": 12,
+            "vechile": "SN 5",
+            "type": "STACKING_ENDS",
+            "picture": "https://pbs.twimg.com/media/EX1yu1AWAAQjVTa?format=jpg&name=large",
+            "credit": "BocaChicaGal",
+            "source": "https://twitter.com/BocaChicaGal/status/1260289629347069953"
+        },
+        {
+            "year": 2020,
             "month": 7,
             "day": 4,
             "vechile": "SN 8",
