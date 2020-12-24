@@ -30,7 +30,7 @@
                         {% if event.type == "MILESTONE" %}
                             <span class="icon star"></span>
                         {% else %}
-                            <span class="vechile">{{ event.vechile }}</span>
+                            <span class="vehicle">{{ event.vehicle }}</span>
                         {% endif %}
                     </span>
                     {% if event.type != "MILESTONE" %}
@@ -53,12 +53,12 @@
                 <div class="image" style="background-image: url({{ event.picture }});"></div>
                 <div class="details">
                     <span class="date">{{ event.date | date: "%B %e, %Y" }}</span><br>
-                    <span class="vechile">
+                    <span class="vehicle">
                         {% if event.type == "MILESTONE" %}
                             <strong>Milestone</strong>
                             {{ event.notes }}
                         {% else %}
-                            <strong>{{ event.vechile }}</strong>
+                            <strong>{{ event.vehicle }}</strong>
                             {{ events[event.type] }}
                         {% endif %}
                     </span><br/>

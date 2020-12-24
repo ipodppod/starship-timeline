@@ -104,7 +104,7 @@ nav ul li .subject {
     align-items: center;
     justify-content: center;
 }
-nav ul li .subject span.vechile {
+nav ul li .subject span.vehicle {
     border: 1px solid black;
     border-radius: 8px;
     display: inline-block;
@@ -157,7 +157,7 @@ body.compact-mode .gallery .event .image {
     background: black;
     margin-bottom: -4px;
 }
-.gallery .event .details .vechile {
+.gallery .event .details .vehicle {
     font-size: 12px;
     text-transform: uppercase;
 }
