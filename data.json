@@ -43,6 +43,27 @@
             "source": "https://spacex.com"
         },
         {
+            "year": 2019,
+            "month": 8,
+            "day": 28,
+            "vehicle": "Hoppy",
+            "type": "LAUNCH",
+            "picture": "https://pbs.twimg.com/media/EDDbjngXoAAsqSF?format=jpg&name=large",
+            "credit": "Trevor Mahlmann",
+            "source": "https://arstechnica.com/science/2019/08/starhopper-aces-test-sets-up-full-scale-prototype-flights-this-year/"
+        },
+        {
+            "year": 2019,
+            "month": 8,
+            "day": 28,
+            "vehicle": "Hoppy",
+            "type": "MILESTONE",
+            "notes": "150 meters",
+            "picture": "https://pbs.twimg.com/media/EDAljuYXkAABK8d?format=jpg&name=medium",
+            "credit": "Jack Beyer",
+            "source": "https://twitter.com/thejackbeyer/status/1166473620312473601"
+        },
+        {
             "year": 2020,
             "month": 4,
             "day": 24,
