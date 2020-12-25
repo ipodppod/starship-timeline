@@ -65,6 +65,36 @@
         },
         {
             "year": 2020,
+            "month": 2,
+            "day": 22,
+            "vehicle": "SN 1",
+            "type": "STACKING_ENDS",
+            "picture": "https://pbs.twimg.com/media/ERZ7f5PXsAIkPI3?format=jpg&name=large",
+            "credit": "Jack Beyer",
+            "source": "https://twitter.com/thejackbeyer/status/1231307443658948608"
+        },
+        {
+            "year": 2020,
+            "month": 2,
+            "day": 25,
+            "vehicle": "SN 1",
+            "type": "ROLL_TO_LAUNCH_PAD",
+            "picture": "https://pbs.twimg.com/media/ERpBGhLUcAA53Go?format=jpg&name=large",
+            "credit": "spadre",
+            "source": "https://twitter.com/SpacePadreIsle/status/1232369079152861184"
+        },
+        {
+            "year": 2020,
+            "month": 2,
+            "day": 29,
+            "vehicle": "SN 1",
+            "type": "RUD",
+            "picture": "https://pbs.twimg.com/media/ER7Fne7UUAE15A2?format=jpg&name=large",
+            "credit": "BocaChicaGal",
+            "source": "https://twitter.com/BocaChicaGal/status/1233603326396313603"
+        },
+        {
+            "year": 2020,
             "month": 4,
             "day": 24,
             "vehicle": "SN 5",
