@@ -4,6 +4,7 @@
         "STACKING_BEGINS": "Stacking Begins",
         "STACKING_ENDS": "Stacking Completed",
         "ROLL_TO_LAUNCH_PAD": "Roll To Launch Pad",
+        "TEST_PASSED": "Test Passed",
         "STATIC_FIRE": "Static Fire",
         "LAUNCH": "Launch!",
         "LANDING": "Successful Landing",
@@ -92,6 +93,66 @@
             "picture": "https://pbs.twimg.com/media/ER7Fne7UUAE15A2?format=jpg&name=large",
             "credit": "BocaChicaGal",
             "source": "https://twitter.com/BocaChicaGal/status/1233603326396313603"
+        },
+        {
+            "year": 2020,
+            "month": 3,
+            "day": 4,
+            "vehicle": "SN 2",
+            "type": "STACKING_ENDS",
+            "picture": "https://forum.nasaspaceflight.com/index.php?action=dlattach;topic=48895.0;attach=1617919;image",
+            "credit": "bocachicagal",
+            "source": "https://forum.nasaspaceflight.com/index.php?topic=48895.msg2054595#msg2054595"
+        },
+        {
+            "year": 2020,
+            "month": 3,
+            "day": 6,
+            "vehicle": "SN 2",
+            "type": "ROLL_TO_LAUNCH_PAD",
+            "picture": "https://forum.nasaspaceflight.com/index.php?action=dlattach;topic=48895.0;attach=1618051;image",
+            "credit": "Nomadd",
+            "source": "https://forum.nasaspaceflight.com/index.php?topic=48895.msg2055155#msg2055155"
+        },
+        {
+            "year": 2020,
+            "month": 3,
+            "day": 8,
+            "vehicle": "SN 2",
+            "type": "TEST_PASSED",
+            "picture": "https://pbs.twimg.com/media/ESoSzdfWAAAv_6L?format=jpg&name=medium",
+            "credit": "bocachicagal",
+            "source": "https://twitter.com/BocaChicaGal/status/1236821725242953728"
+        },
+        {
+            "year": 2020,
+            "month": 3,
+            "day": 26,
+            "vehicle": "SN 3",
+            "type": "STACKING_ENDS",
+            "picture": "https://pbs.twimg.com/media/EUBIq68WsAEm9iR?format=jpg&name=large",
+            "credit": "elon",
+            "source": "https://twitter.com/elonmusk/status/1243084517587419141"
+        },
+        {
+            "year": 2020,
+            "month": 3,
+            "day": 29,
+            "vehicle": "SN 3",
+            "type": "ROLL_TO_LAUNCH_PAD",
+            "picture": "https://forum.nasaspaceflight.com/index.php?action=dlattach;topic=48895.0;attach=1622780;image",
+            "credit": "bocachicagal",
+            "source": "https://forum.nasaspaceflight.com/index.php?topic=48895.msg2063184#msg2063184"
+        },
+        {
+            "year": 2020,
+            "month": 4,
+            "day": 3,
+            "vehicle": "SN 3",
+            "type": "RUD",
+            "picture": "https://pbs.twimg.com/media/EUrgbQXUcAUzkHG?format=jpg&name=large",
+            "credit": "LabPadre",
+            "source": "https://twitter.com/LabPadre/status/1246055045365469184"
         },
         {
             "year": 2020,
