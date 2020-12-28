@@ -123,9 +123,14 @@ nav ul li img {
     z-index: 0;
 }
 .gallery .event {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: calc(100vh);
-    position: relative;
+}
+.gallery .event:not(.active) {
+    visibility: hidden;
 }
 .gallery .event .image {
     position: absolute;
