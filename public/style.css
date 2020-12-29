@@ -24,7 +24,7 @@ ul {
 }
 
 nav {
-    position: fixed;
+    position: absolute;
     top: 0;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -53,23 +53,20 @@ nav ul li {
 nav ul strong {
     font-weight: 400;
 }
-nav ul li.active {
-    /* border-left: 5px solid black;
-    margin-left: -4px; */
-    /* background-color: #f06eaa87;; */
-    /* background-color: #ffdf0087;; */
-}
 nav ul li.active::after {
     content: '';
     display: block;
     width: calc(100% + 50px);
     height: 100%;
-    background-color: #ffdf0087;
     position: absolute;
     left: -50px;
     top: 0;
     z-index: -1;
 }
+nav ul li.active::after {
+    background-color: #ffdf0087;
+}
+
 nav ul li .date {
     font-size: 11px;
     display: block;
@@ -120,7 +117,9 @@ nav ul li img {
     top: 0;
     right: 0;
     width: calc(100vw - 340px);
+    height: 100vh;
     z-index: 0;
+    background: black;
 }
 .gallery .event {
     position: absolute;
