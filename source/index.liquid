@@ -21,20 +21,28 @@
         </template>
     {% endfor %}
 
-    <nav>
-        <menu class="preferences">
+    <main>
+        <div class="preferences">
             <label>Timeline Order</label>
             <buttonset class="switch" name="time-direction">
                 <button name="forward" class="pressed">Chronological</button>
                 <button name="backwards">Latest First</button>
             </buttonset>
-        </menu>
-        <div class="timeline">
-            {% assign events = timeline.events %}
-            {% assign event_types = timeline.event_types %}
-            {% render 'nav-loop', events: events, event_types: event_types %}
         </div>
-    </nav>
+        <section class="main">
+            <menu>
+                <ul>
+                    <li name="close">Close &rarr;</li>
+                    <li name="preferences">&larr; Preferences</li>
+                </ul>
+            </menu>
+            <nav>
+                {% assign events = timeline.events %}
+                {% assign event_types = timeline.event_types %}
+                {% render 'nav-loop', events: events, event_types: event_types %}
+            </nav>
+        </section>
+    </main>
     
     <section class="gallery">
         {% assign events = timeline.events %}

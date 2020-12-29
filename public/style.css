@@ -27,13 +27,38 @@ ul {
     list-style: none;
 }
 
-nav {
+main {
     position: absolute;
     top: 0;
     padding-top: 50px;
     padding-bottom: 50px;
     left: 50px;
     z-index: 1;
+    display: flex;
+    background: white;
+    transform: translateX(calc(var(--preferences-width) * -1));
+    --preferences-width: 400px;
+    transition: .5s transform;
+}
+body.show-preferences main {
+    transform: translateX(0);
+}
+menu {
+    margin-bottom: 50px;
+    margin-right: 50px;
+}
+menu li {
+    cursor: pointer;
+}
+menu li[name="preferences"] {
+    margin-left: -15px;
+}
+menu li:not(:hover) {
+    color: #aaa;
+}
+body.show-preferences main menu li[name="preferences"],
+body:not(.show-preferences) main menu li[name="close"] {
+    display: none;
 }
 nav h2 {
     margin: 15px 0;
@@ -172,11 +197,15 @@ body.compact-mode .gallery .event .image {
 .gallery .event .details .credit {
     text-transform: lowercase;
 }
+
+
 .preferences {
-    padding-right: 50px;
+    padding-right: 125px;
     padding-bottom: 50px;
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
+    width: var(--preferences-width);
+    box-sizing: border-box;
 }
 .preferences label {
     display: block;
