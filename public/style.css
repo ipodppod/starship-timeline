@@ -207,24 +207,30 @@ body.compact-mode .gallery .event .image {
     width: var(--preferences-width);
     box-sizing: border-box;
 }
-.preferences label {
+.preferences h3 {
     display: block;
-    margin: 10px 0;
+    margin: 20px 0 10px;
+    font-weight: inherit;
 }
 
 buttonset {
     display: flex;
+    flex-wrap: wrap;
     border: 1px solid #b0d3ff;
     border-radius: 3px;
     font-size: 11px;
+    margin-bottom: 45px;
 }
 buttonset button {
     text-align: center;
-    width: 100%;
+    width: 50%;
     padding: 10px;
     outline: none;
     border: 0;
     background: white;
+}
+buttonset button:not(:last-nth-child(1)) {
+    border-bottom: 1px solid #b0d3ff;
 }
 buttonset button:not(:last-child) {
     border-right: 1px solid #b0d3ff;
@@ -237,4 +243,25 @@ buttonset button.pressed {
 }
 buttonset button.pressed.deep {
     box-shadow: inset 0px 3px 3px rgb(134 188 255 / 39%);
+}
+
+.checkboxes {
+    padding: 10px 0;
+}
+.checkboxes > div {
+    padding-bottom: 1.5em;
+}
+.checkboxes > div > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+.checkboxes input {
+    margin-right: 4px;
+}
+.checkboxes.shorts {
+    display: flex;
+    flex-wrap: wrap;
+}
+.checkboxes.shorts > div {
+    width: calc(100% / 4);
 }

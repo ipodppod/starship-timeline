@@ -14,6 +14,11 @@ data.events.forEach(event => {
 engine.registerFilters({
     json: input => {
         return JSON.stringify(input)
+    },
+    unique: input => {
+        return input.filter((value, index) => {
+            return input.indexOf(value) === index;
+        })
     }
 })
 

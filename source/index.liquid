@@ -23,11 +23,31 @@
 
     <main>
         <div class="preferences">
-            <label>Timeline Order</label>
-            <buttonset class="switch" name="time-direction">
+            <h3>Timeline Order</h3>
+            <buttonset name="time-direction" class="switch">
                 <button name="forward" class="pressed">Chronological</button>
                 <button name="backwards">Latest First</button>
             </buttonset>
+            <h3>Vehicles</h3>
+            <div class="checkboxes shorts" name="vehicles">
+                {% assign vehicles = timeline.events | map: 'vehicle' | unique %}
+                {% for vehicle in vehicles %}
+                    <div>
+                        <input type="checkbox" checked id="vehicle-{{ vehicle }}" name="{{ vehicle }}" />
+                        <label for="vehicle-{{ vehicle }}">{{ vehicle }}</label>
+                    </div>
+                {% endfor %}
+            </div>
+            <h3>Event Types</h3>
+            <div class="checkboxes" name="types">
+                {% assign types = timeline.event_types %}
+                {% for type in types %}
+                    <div>
+                        <input type="checkbox" checked id="type-{{ type[0] }}" name="{{ type[0] }}" />
+                        <label for="type-{{ type[0] }}">{{ type[1] }}</label>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
         <section class="main">
             <menu>
