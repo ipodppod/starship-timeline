@@ -8,23 +8,26 @@
     <nav>
         <ul>
             {% for event in events %}
+                {% assign day = event.date | date: "%e"  %}
+                {% assign month = event.date | date: "%B"  %}
+                {% assign year = event.date | date: "%Y"  %}
                 {% assign datebreak = false %}
-                {% if event.year != year or event.month != month %}
+                {% if year != last_year or month != last_month %}
                     {% assign datebreak = true %}
                     </ul>
                 {% endif %}
-                {% if event.year != year %}
-                    <h2>{{ event.year }}</h2>
+                {% if year != last_year %}
+                    <h2>{{ year }}</h2>
                 {% endif %}
-                {% if event.month != month %}
-                    <h3>{{ event.date | date: "%B"  }}</h3>
+                {% if month != last_month %}
+                    <h3>{{ month }}</h3>
                 {% endif %}
                 {% if datebreak %}
                     <ul>
                 {% endif %}
                 <li>
-                    {% if event.day != day or datebreak %}
-                        <span class="date">{{ event.day }}</span>
+                    {% if day != last_day or datebreak %}
+                        <span class="date">{{ day }}</span>
                     {% endif %}
                     <span class="subject">
                         {% if event.type == "MILESTONE" %}
@@ -40,9 +43,9 @@
                         <p>{{ event.notes }}</p>
                     {% endif %}
                 </li>
-            {% assign day = event.day %}
-            {% assign year = event.year %}
-            {% assign month = event.month %}
+            {% assign last_day = day %}
+            {% assign last_month = month %}
+            {% assign last_year = year %}
             {% endfor %}
         </ul>
     </nav>

@@ -13,9 +13,7 @@
     },
     "events": [
         {
-            "year": 2019,
-            "month": 1,
-            "day": 11,
+            "date": "2019-01-11",
             "vehicle": "Hoppy",
             "type": "STACKING_ENDS",
             "picture": "./pictures/mk1.jpeg",
@@ -23,9 +21,7 @@
             "source": "https://twitter.com/elonmusk/status/1083567087983964160"
         },
         {
-            "year": 2019,
-            "month": 7,
-            "day": 26,
+            "date": "2019-07-26",
             "vehicle": "Hoppy",
             "type": "LAUNCH",
             "picture": "https://pbs.twimg.com/media/EAX8AVIXYAEK_3e?format=jpg&name=large",
@@ -33,9 +29,7 @@
             "source": "https://twitter.com/TrevorMahlmann/status/1154605968044560384"
         },
         {
-            "year": 2019,
-            "month": 7,
-            "day": 26,
+            "date": "2019-07-26",
             "vehicle": "Hoppy",
             "type": "MILESTONE",
             "notes": "First flight with a raptor",
@@ -44,9 +38,7 @@
             "source": "https://spacex.com"
         },
         {
-            "year": 2019,
-            "month": 8,
-            "day": 28,
+            "date": "2019-08-28",
             "vehicle": "Hoppy",
             "type": "LAUNCH",
             "picture": "https://pbs.twimg.com/media/EDDbjngXoAAsqSF?format=jpg&name=large",
@@ -54,9 +46,7 @@
             "source": "https://arstechnica.com/science/2019/08/starhopper-aces-test-sets-up-full-scale-prototype-flights-this-year/"
         },
         {
-            "year": 2019,
-            "month": 8,
-            "day": 28,
+            "date": "2019-08-28",
             "vehicle": "Hoppy",
             "type": "MILESTONE",
             "notes": "150 meters",
@@ -65,9 +55,7 @@
             "source": "https://twitter.com/thejackbeyer/status/1166473620312473601"
         },
         {
-            "year": 2020,
-            "month": 2,
-            "day": 22,
+            "date": "2020-02-22",
             "vehicle": "SN 1",
             "type": "STACKING_ENDS",
             "picture": "https://pbs.twimg.com/media/ERZ7f5PXsAIkPI3?format=jpg&name=large",
@@ -75,9 +63,7 @@
             "source": "https://twitter.com/thejackbeyer/status/1231307443658948608"
         },
         {
-            "year": 2020,
-            "month": 2,
-            "day": 25,
+            "date": "2020-02-25",
             "vehicle": "SN 1",
             "type": "ROLL_TO_LAUNCH_PAD",
             "picture": "https://pbs.twimg.com/media/ERpBGhLUcAA53Go?format=jpg&name=large",
@@ -85,9 +71,7 @@
             "source": "https://twitter.com/SpacePadreIsle/status/1232369079152861184"
         },
         {
-            "year": 2020,
-            "month": 2,
-            "day": 29,
+            "date": "2020-02-29",
             "vehicle": "SN 1",
             "type": "RUD",
             "picture": "https://pbs.twimg.com/media/ER7Fne7UUAE15A2?format=jpg&name=large",
@@ -95,9 +79,7 @@
             "source": "https://twitter.com/BocaChicaGal/status/1233603326396313603"
         },
         {
-            "year": 2020,
-            "month": 3,
-            "day": 4,
+            "date": "2020-03-04",
             "vehicle": "SN 2",
             "type": "STACKING_ENDS",
             "picture": "https://forum.nasaspaceflight.com/index.php?action=dlattach;topic=48895.0;attach=1617919;image",
@@ -105,9 +87,7 @@
             "source": "https://forum.nasaspaceflight.com/index.php?topic=48895.msg2054595#msg2054595"
         },
         {
-            "year": 2020,
-            "month": 3,
-            "day": 6,
+            "date": "2020-03-06",
             "vehicle": "SN 2",
             "type": "ROLL_TO_LAUNCH_PAD",
             "picture": "https://forum.nasaspaceflight.com/index.php?action=dlattach;topic=48895.0;attach=1618051;image",
@@ -115,9 +95,7 @@
             "source": "https://forum.nasaspaceflight.com/index.php?topic=48895.msg2055155#msg2055155"
         },
         {
-            "year": 2020,
-            "month": 3,
-            "day": 8,
+            "date": "2020-03-08",
             "vehicle": "SN 2",
             "type": "TEST_PASSED",
             "picture": "https://pbs.twimg.com/media/ESoSzdfWAAAv_6L?format=jpg&name=medium",
@@ -125,9 +103,7 @@
             "source": "https://twitter.com/BocaChicaGal/status/1236821725242953728"
         },
         {
-            "year": 2020,
-            "month": 3,
-            "day": 26,
+            "date": "2020-03-26",
             "vehicle": "SN 3",
             "type": "STACKING_ENDS",
             "picture": "https://pbs.twimg.com/media/EUBIq68WsAEm9iR?format=jpg&name=large",
@@ -135,9 +111,7 @@
             "source": "https://twitter.com/elonmusk/status/1243084517587419141"
         },
         {
-            "year": 2020,
-            "month": 3,
-            "day": 29,
+            "date": "2020-03-29",
             "vehicle": "SN 3",
             "type": "ROLL_TO_LAUNCH_PAD",
             "picture": "https://forum.nasaspaceflight.com/index.php?action=dlattach;topic=48895.0;attach=1622780;image",
@@ -145,9 +119,7 @@
             "source": "https://forum.nasaspaceflight.com/index.php?topic=48895.msg2063184#msg2063184"
         },
         {
-            "year": 2020,
-            "month": 4,
-            "day": 3,
+            "date": "2020-04-03",
             "vehicle": "SN 3",
             "type": "RUD",
             "picture": "https://pbs.twimg.com/media/EUrgbQXUcAUzkHG?format=jpg&name=large",
@@ -155,9 +127,7 @@
             "source": "https://twitter.com/LabPadre/status/1246055045365469184"
         },
         {
-            "year": 2020,
-            "month": 4,
-            "day": 24,
+            "date": "2020-04-24",
             "vehicle": "SN 5",
             "type": "STACKING_BEGINS",
             "picture": "https://forum.nasaspaceflight.com/index.php?action=dlattach;topic=48895.0;attach=1627982;image",
@@ -165,9 +135,7 @@
             "source": "https://forum.nasaspaceflight.com/index.php?topic=48895.msg2072384#msg2072384"
         },
         {
-            "year": 2020,
-            "month": 5,
-            "day": 12,
+            "date": "2020-05-12",
             "vehicle": "SN 5",
             "type": "STACKING_ENDS",
             "picture": "https://pbs.twimg.com/media/EX1yu1AWAAQjVTa?format=jpg&name=large",
@@ -175,9 +143,7 @@
             "source": "https://twitter.com/BocaChicaGal/status/1260289629347069953"
         },
         {
-            "year": 2020,
-            "month": 7,
-            "day": 4,
+            "date": "2020-07-04",
             "vehicle": "SN 8",
             "type": "FIRST_PART_SPOTTED",
             "picture": "https://pbs.twimg.com/media/EcFzloRXkAATcem?format=jpg&name=large",
@@ -185,9 +151,7 @@
             "source": "https://twitter.com/BocaChicaGal/status/1279430872417083400"
         },
         {
-            "year": 2020,
-            "month": 7,
-            "day": 10,
+            "date": "2020-07-10",
             "vehicle": "SN 8",
             "type": "STACKING_BEGINS",
             "picture": "https://pbs.twimg.com/media/EchyiQoXoAsW3q0?format=jpg&name=large",
@@ -195,9 +159,7 @@
             "source": "https://twitter.com/BocaChicaGal/status/1281400070794084352"
         },
         {
-            "year": 2020,
-            "month": 8,
-            "day": 5,
+            "date": "2020-08-05",
             "vehicle": "SN 5",
             "type": "LAUNCH",
             "picture": "https://pbs.twimg.com/media/EesGmrMXsAYjWeY?format=jpg&name=large",
@@ -205,9 +167,7 @@
             "source": "https://twitter.com/thesheetztweetz/status/1291132984070934528"
         },
         {
-            "year": 2020,
-            "month": 8,
-            "day": 5,
+            "date": "2020-08-05",
             "vehicle": "SN 5",
             "type": "MILESTONE",
             "notes": "150 meters",
@@ -216,9 +176,7 @@
             "source": "https://twitter.com/SciGuySpace/status/1290804907814117379"
         },
         {
-            "year": 2020,
-            "month": 9,
-            "day": 13,
+            "date": "2020-09-13",
             "vehicle": "SN 9",
             "type": "STACKING_BEGINS",
             "picture": "https://pbs.twimg.com/media/Ehz7nbGXkAI0wIh?format=jpg&name=large",
@@ -226,9 +184,7 @@
             "source": "https://twitter.com/BocaChicaGal/status/1305194656993611776"
         },
         {
-            "year": 2020,
-            "month": 9,
-            "day": 26,
+            "date": "2020-09-26",
             "vehicle": "SN 8",
             "type": "ROLL_TO_LAUNCH_PAD",
             "picture": "https://pbs.twimg.com/media/Ei2b1QxVgAEXLU8?format=jpg&name=medium",
@@ -236,9 +192,7 @@
             "source": "https://twitter.com/LabPadre"
         },
         {
-            "year": 2020,
-            "month": 10,
-            "day": 28,
+            "date": "2020-10-28",
             "vehicle": "SN 8",
             "type": "STACKING_ENDS",
             "picture": "https://pbs.twimg.com/media/ElAirLMXYAAgJyn?format=jpg&name=large",
@@ -246,9 +200,7 @@
             "source": "https://twitter.com/NASASpaceflight"
         },
         {
-            "year": 2020,
-            "month": 12,
-            "day": 9,
+            "date": "2020-12-09",
             "vehicle": "SN 8",
             "type": "LAUNCH",
             "picture": "./pictures/sn8-launch.jpg",
@@ -256,9 +208,7 @@
             "source": "https://spacex.com"
         },
         {
-            "year": 2020,
-            "month": 12,
-            "day": 9,
+            "date": "2020-12-09",
             "vehicle": "SN 8",
             "type": "MILESTONE",
             "notes": "First ever belly flop",
@@ -267,9 +217,7 @@
             "source": "https://spacex.com"
         },
         {
-            "year": 2020,
-            "month": 12,
-            "day": 9,
+            "date": "2020-12-09",
             "vehicle": "SN 8",
             "type": "RUD",
             "picture": "./pictures/sn8-rud.jpg",
@@ -277,9 +225,7 @@
             "source": "https://twitter.com/considercosmos/status/1337176151865831424"
         },
         {
-            "year": 2020,
-            "month": 12,
-            "day": 22,
+            "date": "2020-12-22",
             "vehicle": "SN 9",
             "type": "ROLL_TO_LAUNCH_PAD",
             "picture": "./pictures/sn9-pad.jpg",
