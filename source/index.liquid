@@ -2,8 +2,21 @@
     <title>Starship Timeline</title>
     <link rel="stylesheet" href="style.css" />
     <script src="index.js"></script>
+    <script src="assets/liquid.browser.min.js"></script>
 </head>
 <body>
+
+    <script>
+        window.timeline = {{ timeline | json }};
+    </script>
+
+    {% for template in templates %}
+        {% assign template_name = template[0] %}
+        {% assign template_content = template[1] %}
+        <template name="{{ template_name }}">
+            {{ template_content }}
+        </template>
+    {% endfor %}
 
     <nav>
         {% assign events = timeline.events %}
