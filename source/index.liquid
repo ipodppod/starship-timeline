@@ -6,71 +6,15 @@
 <body>
 
     <nav>
-        <ul>
-            {% for event in events %}
-                {% assign day = event.date | date: "%e"  %}
-                {% assign month = event.date | date: "%B"  %}
-                {% assign year = event.date | date: "%Y"  %}
-                {% assign datebreak = false %}
-                {% if year != last_year or month != last_month %}
-                    {% assign datebreak = true %}
-                    </ul>
-                {% endif %}
-                {% if year != last_year %}
-                    <h2>{{ year }}</h2>
-                {% endif %}
-                {% if month != last_month %}
-                    <h3>{{ month }}</h3>
-                {% endif %}
-                {% if datebreak %}
-                    <ul>
-                {% endif %}
-                <li>
-                    {% if day != last_day or datebreak %}
-                        <span class="date">{{ day }}</span>
-                    {% endif %}
-                    <span class="subject">
-                        {% if event.type == "MILESTONE" %}
-                            <span class="icon star"></span>
-                        {% else %}
-                            <span class="vehicle">{{ event.vehicle }}</span>
-                        {% endif %}
-                    </span>
-                    {% if event.type != "MILESTONE" %}
-                        <strong>{{ event_types[event.type] }}</strong>
-                    {% endif %}
-                    {% if event.notes %}
-                        <p>{{ event.notes }}</p>
-                    {% endif %}
-                </li>
-            {% assign last_day = day %}
-            {% assign last_month = month %}
-            {% assign last_year = year %}
-            {% endfor %}
-        </ul>
+        {% assign events = timeline.events %}
+        {% assign event_types = timeline.event_types %}
+        {% render 'nav-loop', events: events, event_types: event_types %}
     </nav>
     
     <section class="gallery">
-        {% for event in events %}
-            <div class="event">
-                <div class="image" style="background-image: url({{ event.picture }});"></div>
-                <div class="details">
-                    <span class="date">{{ event.date | date: "%B %e, %Y" }}</span><br>
-                    <span class="title">
-                        {% if event.type == "MILESTONE" %}
-                            <strong>Milestone</strong>
-                            {{ event.notes }}
-                        {% else %}
-                            <strong>{{ event.vehicle }}</strong>
-                            {{ event_types[event.type] }}
-                        {% endif %}
-                    </span><br/>
-                    <div class="credit">
-                        credit: <a target="_blank" href="{{ event.source }}">{{ event.credit }}</a>
-                    </div>
-                </div>
-            </div>
-        {% endfor %}
+        {% assign events = timeline.events %}
+        {% assign event_types = timeline.event_types %}
+        {% render 'gallery-loop', events: events, event_types: event_types %}
     </section>
 
 </body>
