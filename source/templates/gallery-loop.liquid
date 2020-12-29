@@ -1,5 +1,5 @@
 {% for event in events %}
-    <div class="event">
+    <div class="event" data-id="{{ event.id }}">
         <div class="image" style="background-image: url({{ event.picture }});"></div>
         <div class="details">
             <span class="date">{{ event.date | date: "%B %e, %Y" }}</span><br>

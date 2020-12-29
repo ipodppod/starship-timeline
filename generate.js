@@ -7,7 +7,8 @@ const data = jsonfile.readFileSync('./data.json')
 const filesystem = new liquid.LocalFileSystem('./source/templates', 'liquid');
 
 data.events.forEach(event => {
-    event.date = new Date(event.date)
+    event.date = new Date(event.date);
+    event.id = Math.random();
 });
 
 engine.registerFilters({

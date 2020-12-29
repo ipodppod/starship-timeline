@@ -1,7 +1,10 @@
 <head>
     <title>Starship Timeline</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="index.js"></script>
+    <script src="_.js"></script>
+    <script src="buttons.js"></script>
+    <script src="scrolling.js"></script>
+    <script src="preferences.js"></script>
     <script src="assets/liquid.browser.min.js"></script>
 </head>
 <body>
@@ -19,9 +22,18 @@
     {% endfor %}
 
     <nav>
-        {% assign events = timeline.events %}
-        {% assign event_types = timeline.event_types %}
-        {% render 'nav-loop', events: events, event_types: event_types %}
+        <menu class="preferences">
+            <label>Timeline Order</label>
+            <buttonset class="switch" name="time-direction">
+                <button name="forward" class="pressed">Chronological</button>
+                <button name="backwards">Latest First</button>
+            </buttonset>
+        </menu>
+        <div class="timeline">
+            {% assign events = timeline.events %}
+            {% assign event_types = timeline.event_types %}
+            {% render 'nav-loop', events: events, event_types: event_types %}
+        </div>
     </nav>
     
     <section class="gallery">

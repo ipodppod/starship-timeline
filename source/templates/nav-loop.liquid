@@ -17,7 +17,7 @@
         {% if datebreak %}
             <ul>
         {% endif %}
-        <li>
+        <li data-id="{{ event.id }}">
             {% if day != last_day or datebreak %}
                 <span class="date">{{ day }}</span>
             {% endif %}

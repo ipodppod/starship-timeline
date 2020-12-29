@@ -172,3 +172,40 @@ body.compact-mode .gallery .event .image {
 .gallery .event .details .credit {
     text-transform: lowercase;
 }
+.preferences {
+    padding-right: 50px;
+    padding-bottom: 50px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.preferences label {
+    display: block;
+    margin: 10px 0;
+}
+
+buttonset {
+    display: flex;
+    border: 1px solid #b0d3ff;
+    border-radius: 3px;
+    font-size: 11px;
+}
+buttonset button {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 0;
+    background: white;
+}
+buttonset button:not(:last-child) {
+    border-right: 1px solid #b0d3ff;
+}
+buttonset button.pressed {
+    background: #d9eaff;
+    box-shadow: inset 0px 2px 3px rgb(134 188 255 / 39%);
+    padding-top: 11px;
+    padding-bottom: 9px;
+}
+buttonset button.pressed.deep {
+    box-shadow: inset 0px 3px 3px rgb(134 188 255 / 39%);
+}
