@@ -4,6 +4,7 @@
         "STACKING_BEGINS": "Stacking Begins",
         "STACKING_ENDS": "Stacking Completed",
         "ROLL_TO_LAUNCH_PAD": "Roll To Launch Pad",
+        "TEST_STARTED": "Test Started",
         "TEST_PASSED": "Test Passed",
         "STATIC_FIRE": "Static Fire",
         "LAUNCH": "Launch!",
@@ -183,12 +184,52 @@
             "source": "https://www.youtube.com/watch?v=7YaFsUWgN3s&feature=youtu.be"
         },
         {
+            "date": "2020-06-10",
+            "vehicle": "SN 7",
+            "type": "STACKING_ENDS",
+            "picture": "https://pbs.twimg.com/media/EaJH1KmXgAEGZ0Q?format=jpg&name=large",
+            "credit": "bocachicagal",
+            "source": "https://twitter.com/actuxspace/status/1270657042068406274"
+        },
+        {
+            "date": "2020-06-12",
+            "vehicle": "SN 7",
+            "type": "ROLL_TO_LAUNCH_PAD",
+            "picture": "https://pbs.twimg.com/media/EajdCPMXsAAOL0Q?format=jpg&name=4096x4096",
+            "credit": "spadre",
+            "source": "https://twitter.com/SpacePadreIsle/status/1272509941757161472"
+        },
+        {
             "date": "2020-06-14",
             "vehicle": "SN 6",
             "type": "STACKING_ENDS",
             "picture": "https://pbs.twimg.com/media/Eagc9E6XYAMAOQD?format=jpg&name=large",
             "credit": "bocachicagal",
             "source": "https://twitter.com/bocachicagal/status/1272298776590499841"
+        },
+        {
+            "date": "2020-06-15",
+            "vehicle": "SN 7",
+            "type": "TEST_STARTED",
+            "picture": "https://pbs.twimg.com/media/EalThLUX0AI_MEJ?format=jpg&name=large",
+            "credit": "labpadre",
+            "source": "https://twitter.com/bluemoondance74/status/1272640203719618561"
+        },
+        {
+            "date": "2020-06-23",
+            "vehicle": "SN 7",
+            "type": "TEST_PASSED",
+            "picture": "./pictures/sn7-test.jpg",
+            "credit": "labpadre",
+            "source": "https://www.youtube.com/labpadre/live"
+        },
+        {
+            "date": "2020-06-23",
+            "vehicle": "SN 7",
+            "type": "RUD",
+            "picture": "https://pbs.twimg.com/media/EbO4AQiXsAApnb5?format=jpg&name=large",
+            "credit": "RGV aerial photography",
+            "source": "https://twitter.com/RGVaerialphotos/status/1275566375654883334"
         },
         {
             "date": "2020-07-04",
@@ -232,6 +273,14 @@
             "source": "https://twitter.com/LabPadre/status/1293283532127850500"
         },
         {
+            "date": "2020-08-30",
+            "vehicle": "SN 7.1",
+            "type": "STACKING_ENDS",
+            "picture": "https://pbs.twimg.com/media/EgvyJDxU0AAxGo6?format=jpg&name=large",
+            "credit": "bocachicagal",
+            "source": "https://twitter.com/MarcusHouseGame/status/1300399886085496834"
+        },
+        {
             "date": "2020-09-03",
             "vehicle": "SN 6",
             "type": "LAUNCH",
@@ -240,12 +289,36 @@
             "source": "https://twitter.com/thejackbeyer/status/1301580511811432455"
         },
         {
+            "date": "2020-09-07",
+            "vehicle": "SN 7.1",
+            "type": "ROLL_TO_LAUNCH_PAD",
+            "picture": "https://pbs.twimg.com/media/EhVdmddXgAIsbuz?format=jpg&name=4096x4096",
+            "credit": "LabPadre",
+            "source": "https://twitter.com/LabPadre/status/1303050866140815360"
+        },
+        {
             "date": "2020-09-13",
             "vehicle": "SN 9",
             "type": "STACKING_BEGINS",
             "picture": "https://pbs.twimg.com/media/Ehz7nbGXkAI0wIh?format=jpg&name=large",
             "credit": "BocaChicaGal",
             "source": "https://twitter.com/BocaChicaGal/status/1305194656993611776"
+        },
+        {
+            "date": "2020-09-23",
+            "vehicle": "SN 7.1",
+            "type": "TEST_PASSED",
+            "picture": "./pictures/sn7.1-test.jpg",
+            "credit": "nextspaceflight",
+            "source": "https://twitter.com/nextspaceflight/status/1308705645902753792"
+        },
+        {
+            "date": "2020-09-23",
+            "vehicle": "SN 7.1",
+            "type": "RUD",
+            "picture": "./pictures/sn7.1-rud.jpg",
+            "credit": "nextspaceflight",
+            "source": "https://twitter.com/nextspaceflight/status/1308705645902753792"
         },
         {
             "date": "2020-09-26",
