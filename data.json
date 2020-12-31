@@ -175,6 +175,14 @@
             "source": "https://twitter.com/BocaChicaGal/status/1260289629347069953"
         },
         {
+            "date": "2020-05-29",
+            "vehicle": "SN 4",
+            "type": "RUD",
+            "picture": "./pictures/sn4-rud.jpg",
+            "credit": "nasaspaceflight",
+            "source": "https://www.youtube.com/watch?v=7YaFsUWgN3s&feature=youtu.be"
+        },
+        {
             "date": "2020-07-04",
             "vehicle": "SN 8",
             "type": "FIRST_PART_SPOTTED",
