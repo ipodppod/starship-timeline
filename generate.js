@@ -1,6 +1,7 @@
 const fs = require('fs')
 const liquid = require('liquid')
 const jsonfile = require('jsonfile')
+const sort = require('sort-array')
 const engine = new liquid.Engine()
 const template = fs.readFileSync('./source/index.liquid').toString()
 const data = jsonfile.readFileSync('./data.json')
@@ -10,6 +11,8 @@ data.events.forEach(event => {
     event.date = new Date(event.date);
     event.id = Math.random();
 });
+
+sort(data.events, { by: 'date' });
 
 engine.registerFilters({
     json: input => {

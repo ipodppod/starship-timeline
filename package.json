@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "jsonfile": "^6.1.0",
-    "liquid": "^5.1.1"
+    "liquid": "^5.1.1",
+    "sort-array": "^4.1.3"
   }
 }
