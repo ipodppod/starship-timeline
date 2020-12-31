@@ -183,6 +183,14 @@
             "source": "https://www.youtube.com/watch?v=7YaFsUWgN3s&feature=youtu.be"
         },
         {
+            "date": "2020-06-14",
+            "vehicle": "SN 6",
+            "type": "STACKING_ENDS",
+            "picture": "https://pbs.twimg.com/media/Eagc9E6XYAMAOQD?format=jpg&name=large",
+            "credit": "bocachicagal",
+            "source": "https://twitter.com/bocachicagal/status/1272298776590499841"
+        },
+        {
             "date": "2020-07-04",
             "vehicle": "SN 8",
             "type": "FIRST_PART_SPOTTED",
@@ -214,6 +222,22 @@
             "picture": "https://pbs.twimg.com/media/EencOImWsAA_Z77?format=jpg&name=large",
             "credit": "Trevor Mahlmann",
             "source": "https://twitter.com/SciGuySpace/status/1290804907814117379"
+        },
+        {
+            "date": "2020-08-11",
+            "vehicle": "SN 6",
+            "type": "ROLL_TO_LAUNCH_PAD",
+            "picture": "https://pbs.twimg.com/media/EfKqWwJXYAAgk-h?format=jpg&name=4096x4096",
+            "credit": "LabPadre",
+            "source": "https://twitter.com/LabPadre/status/1293283532127850500"
+        },
+        {
+            "date": "2020-09-03",
+            "vehicle": "SN 6",
+            "type": "LAUNCH",
+            "picture": "https://pbs.twimg.com/media/EhAkkTTWAAwVfJX?format=jpg&name=large",
+            "credit": "Jack Beyer",
+            "source": "https://twitter.com/thejackbeyer/status/1301580511811432455"
         },
         {
             "date": "2020-09-13",
