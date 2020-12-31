@@ -127,12 +127,44 @@
             "source": "https://twitter.com/LabPadre/status/1246055045365469184"
         },
         {
+            "date": "2020-04-17",
+            "vehicle": "SN 4",
+            "type": "STACKING_ENDS",
+            "picture": "https://pbs.twimg.com/media/EV0QJeEXkAAFC_w?format=jpg&name=large",
+            "credit": "BocaChicaGal",
+            "source": "https://twitter.com/BocaChicaGal/status/1251174045283999744"
+        },
+        {
+            "date": "2020-04-23",
+            "vehicle": "SN 4",
+            "type": "ROLL_TO_LAUNCH_PAD",
+            "picture": "https://pbs.twimg.com/media/EWT20B5WkAENZlh?format=jpg&name=large",
+            "credit": "spacex",
+            "source": "https://twitter.com/elonmusk/status/1253397976749391873"
+        },
+        {
+            "date": "2020-04-27",
+            "vehicle": "SN 4",
+            "type": "TEST_PASSED",
+            "picture": "https://forum.nasaspaceflight.com/index.php?action=dlattach;topic=48895.0;attach=1628902;image",
+            "credit": "bocachicagal",
+            "source": "https://forum.nasaspaceflight.com/index.php?topic=48895.msg2073688#msg2073688"
+        },
+        {
             "date": "2020-04-24",
             "vehicle": "SN 5",
             "type": "STACKING_BEGINS",
             "picture": "https://forum.nasaspaceflight.com/index.php?action=dlattach;topic=48895.0;attach=1627982;image",
             "credit": "BocaChicaGal",
             "source": "https://forum.nasaspaceflight.com/index.php?topic=48895.msg2072384#msg2072384"
+        },
+        {
+            "date": "2020-05-06",
+            "vehicle": "SN 4",
+            "type": "STATIC_FIRE",
+            "picture": "https://forum.nasaspaceflight.com/index.php?action=dlattach;topic=48895.0;attach=1870118;image",
+            "credit": "BocaChicaGal",
+            "source": "https://forum.nasaspaceflight.com/index.php?topic=48895.msg2078247#msg2078247"
         },
         {
             "date": "2020-05-12",
