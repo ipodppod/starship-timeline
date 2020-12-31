@@ -143,20 +143,20 @@
             "source": "https://twitter.com/elonmusk/status/1253397976749391873"
         },
         {
-            "date": "2020-04-27",
-            "vehicle": "SN 4",
-            "type": "TEST_PASSED",
-            "picture": "https://forum.nasaspaceflight.com/index.php?action=dlattach;topic=48895.0;attach=1628902;image",
-            "credit": "bocachicagal",
-            "source": "https://forum.nasaspaceflight.com/index.php?topic=48895.msg2073688#msg2073688"
-        },
-        {
             "date": "2020-04-24",
             "vehicle": "SN 5",
             "type": "STACKING_BEGINS",
             "picture": "https://forum.nasaspaceflight.com/index.php?action=dlattach;topic=48895.0;attach=1627982;image",
             "credit": "BocaChicaGal",
             "source": "https://forum.nasaspaceflight.com/index.php?topic=48895.msg2072384#msg2072384"
+        },
+        {
+            "date": "2020-04-27",
+            "vehicle": "SN 4",
+            "type": "TEST_PASSED",
+            "picture": "https://forum.nasaspaceflight.com/index.php?action=dlattach;topic=48895.0;attach=1628902;image",
+            "credit": "bocachicagal",
+            "source": "https://forum.nasaspaceflight.com/index.php?topic=48895.msg2073688#msg2073688"
         },
         {
             "date": "2020-05-06",
