@@ -21,7 +21,11 @@ engine.registerFilters({
         return input.filter((value, index) => {
             return input.indexOf(value) === index;
         })
-    }
+    },
+    where: (input, field, value) => {
+        return input.filter(object => object[field] == value);
+    },
+    keys: input => Object.keys(input)
 })
 
 const snippets = {};

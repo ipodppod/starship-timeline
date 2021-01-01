@@ -1,0 +1,35 @@
+html {
+    background: black;
+    --color: #00daff;
+}
+main {
+    font-size: 0;
+    white-space: nowrap;
+}
+article {
+    display: inline-block;
+    vertical-align: top;
+    font-size: initial;
+    width: 250px;
+    min-width: calc(100vw / var(--number-of-articles));
+    overflow: hidden;
+}
+article .image {
+    width: 100%;
+    height: 500px;
+    max-height: calc(100vh - 250px);
+    background-size: cover;
+    background-position: center;
+}
+
+article .details h1 {
+    margin: 50px auto;
+    text-align: center;
+    display: block;
+}
+article .details .vehicle {
+    border: 2px solid var(--color);
+    border-radius: 8px;
+    padding: 6px 20px;
+    font-size: 18px;
+}

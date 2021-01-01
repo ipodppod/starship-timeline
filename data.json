@@ -12,6 +12,18 @@
         "RUD": "RUD",
         "MILESTONE": "Milestone"
     },
+    "hall_of_fame": {
+        "Hoppy": "LAUNCH",
+        "SN 1": "RUD",
+        "SN 2": "TEST_PASSED",
+        "SN 3": "RUD",
+        "SN 4": "RUD",
+        "SN 5": "LAUNCH",
+        "SN 6": "LAUNCH",
+        "SN 7": "RUD",
+        "SN 7.1": "RUD",
+        "SN 8": "LAUNCH"
+    },
     "events": [
         {
             "date": "2019-01-11",

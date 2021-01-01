@@ -1,4 +1,7 @@
 <ul>
+    {% assign last_day = null %}
+    {% assign last_month = null %}
+    {% assign last_year = null %}
     {% for event in events %}
         {% assign day = event.date | date: "%e"  %}
         {% assign month = event.date | date: "%B"  %}

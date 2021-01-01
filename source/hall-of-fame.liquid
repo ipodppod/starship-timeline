@@ -1,0 +1,27 @@
+<head>
+    <title>Starship Hall Of Fame</title>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/hall-of-fame.css" />
+</head>
+<body>
+
+    <main style="--number-of-articles: {{ timeline.hall_of_fame | keys | size }}">
+        {% for celebrity in timeline.hall_of_fame %}
+            {% assign vehicle = celebrity[0] %}
+            {% assign event_type = celebrity[1] %}
+            {% assign events = timeline.events | where: "vehicle", vehicle %}
+            {% assign highlight = events | where: "type", event_type | first %}
+            <article>
+                <div class="image" style="background-image: url({{ highlight.picture }});"></div>
+                <div class="details">
+                    <h1><span class="vehicle">{{ vehicle }}</span></h1>
+                    <div class="timeline hide-subject">
+                        {% assign event_types = timeline.event_types %}
+                        {% include 'nav-loop', events: events, event_types: event_types %}
+                    </div>
+                </div>
+            </article>
+        {% endfor %}
+    </main>
+
+</body>
