@@ -2,8 +2,9 @@
 
 html {
     font-family: 'IBM Plex Mono', monospace;
-    background: white;
-    color: black;
+    background: #ffffff;
+    --color: black;
+    color: var(--color);
 }
 
 strong {
@@ -27,59 +28,33 @@ ul {
     list-style: none;
 }
 
-main {
-    position: absolute;
-    top: 0;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    left: 50px;
-    z-index: 1;
-    display: flex;
-    background: white;
-    transform: translateX(calc(var(--preferences-width) * -1));
-    --preferences-width: 400px;
-    transition: .5s transform;
+
+.timeline {
+    padding-left: 50px;
 }
-body.show-preferences main {
-    transform: translateX(0);
-}
-menu {
-    margin-bottom: 50px;
-    margin-right: 50px;
-}
-menu li {
-    cursor: pointer;
-}
-menu li[name="preferences"] {
-    margin-left: -15px;
-}
-menu li:not(:hover) {
-    color: #aaa;
-}
-body.show-preferences main menu li[name="preferences"],
-body:not(.show-preferences) main menu li[name="close"] {
-    display: none;
-}
-nav h2 {
+.timeline h2 {
     margin: 15px 0;
     font-weight: 200;
     font-size: 26px;
 }
-nav h3 {
+.timeline h3 {
     margin: 15px 0;
     font-weight: 200;
     font-size: 13px;
 }
-nav ul li {
+.timeline ul li {
     padding: 15px;
     padding-left: 75px;
-    border-left: 1px solid black;
+    border-left: 1px solid var(--color);
     font-size: 11px;
     font-weight: 200;
     width: 200px;
     position: relative;
 }
-nav ul li.active::after {
+.timeline.hide-subject ul li {
+    padding-left: 25px;
+}
+.timeline ul li.active::after {
     content: '';
     display: block;
     width: calc(100% + 50px);
@@ -89,11 +64,11 @@ nav ul li.active::after {
     top: 0;
     z-index: -1;
 }
-nav ul li.active::after {
+.timeline ul li.active::after {
     background-color: #ffdf0087;
 }
 
-nav ul li .date {
+.timeline ul li .date {
     font-size: 11px;
     display: block;
     position: absolute;
@@ -106,16 +81,16 @@ nav ul li .date {
     align-items: center;
     justify-content: center;
 }
-nav ul li .icon.star {
+.timeline ul li .icon.star {
     display: inline-block;
     vertical-align: middle;
     width: 12px;
     height: 12px;
-    background: url(assets/star.svg);
+    background: url(../assets/star.svg);
     background-size: contain;
     background-repeat: no-repeat;
 }
-nav ul li .subject {
+.timeline ul li .subject {
     display: block;
     position: absolute;
     top: 0;
@@ -127,90 +102,18 @@ nav ul li .subject {
     align-items: center;
     justify-content: center;
 }
-nav ul li .subject span.vehicle {
-    border: 1px solid black;
+.timeline.hide-subject ul li .subject {
+    display: none;
+}
+.timeline ul li .subject span.vehicle {
+    border: 1px solid var(--color);
     border-radius: 8px;
     display: inline-block;
     padding: 2px 8px;
     font-weight: 400;
 }
-nav ul li img {
+.timeline ul li img {
     display: none;
-}
-
-.gallery {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: calc(100vw - 340px);
-    height: 100vh;
-    z-index: 0;
-    background: black;
-}
-.gallery .event {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: calc(100vh);
-}
-.gallery .event:not(.active) {
-    visibility: hidden;
-}
-.gallery .event .image {
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-}
-body.compact-mode .gallery .event .image {
-    left: 50%;
-    top: 40%;
-    width: 540px;
-    height: 300px;
-    transform: translateX(-50%) translateY(-50%) rotate(-1deg);
-}
-.gallery .event .details {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    font-size: 11px;
-    color: white;
-    font-weight: 200;
-}
-.gallery .event .details > * {
-    display: inline-block;
-    padding: 4px 8px;
-    background: black;
-    margin-bottom: -4px;
-}
-.gallery .event .details .title {
-    font-size: 16px;
-    text-transform: uppercase;
-}
-.gallery .event .details .date {
-    text-transform: uppercase;
-}
-.gallery .event .details .credit {
-    text-transform: lowercase;
-}
-
-
-.preferences {
-    padding-right: 125px;
-    padding-bottom: 50px;
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
-    width: var(--preferences-width);
-    box-sizing: border-box;
-}
-.preferences h3 {
-    display: block;
-    margin: 20px 0 10px;
-    font-weight: inherit;
 }
 
 buttonset {

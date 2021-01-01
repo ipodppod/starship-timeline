@@ -1,0 +1,100 @@
+
+main {
+    position: absolute;
+    top: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    background: white;
+    transform: translateX(calc(var(--preferences-width) * -1));
+    --preferences-width: 400px;
+    transition: .5s transform;
+}
+body.show-preferences main {
+    transform: translateX(0);
+}
+menu {
+    padding: 25px 50px 50px;
+}
+menu li {
+    cursor: pointer;
+}
+menu li[name="preferences"] {
+    margin-left: -15px;
+}
+menu li:not(:hover) {
+    color: #aaa;
+}
+body.show-preferences main menu li[name="preferences"],
+body:not(.show-preferences) main menu li[name="close"] {
+    display: none;
+}
+
+.gallery {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100vw - 340px);
+    height: 100vh;
+    z-index: 0;
+    background: black;
+}
+.gallery .event {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh);
+}
+.gallery .event:not(.active) {
+    visibility: hidden;
+}
+.gallery .event .image {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.gallery .event .details {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 11px;
+    color: white;
+    font-weight: 200;
+}
+.gallery .event .details > * {
+    display: inline-block;
+    padding: 4px 8px;
+    background: black;
+    margin-bottom: -4px;
+}
+.gallery .event .details .title {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.gallery .event .details .date {
+    text-transform: uppercase;
+}
+.gallery .event .details .credit {
+    text-transform: lowercase;
+}
+
+
+.preferences {
+    padding: 0 100px 50px 50px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: var(--preferences-width);
+    box-sizing: border-box;
+}
+.preferences h3 {
+    display: block;
+    margin: 20px 0 10px;
+    font-weight: inherit;
+}

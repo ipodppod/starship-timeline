@@ -1,6 +1,7 @@
 <head>
     <title>Starship Timeline</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/homepage.css" />
     <script src="_.js"></script>
     <script src="buttons.js"></script>
     <script src="scrolling.js"></script>
@@ -56,7 +57,7 @@
                     <li name="preferences">&larr; Preferences</li>
                 </ul>
             </menu>
-            <nav>
+            <nav class="timeline">
                 {% assign events = timeline.events %}
                 {% assign event_types = timeline.event_types %}
                 {% render 'nav-loop', events: events, event_types: event_types %}

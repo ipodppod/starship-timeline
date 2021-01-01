@@ -11,7 +11,7 @@
     });
 
     function restart() {
-        timeline = document.querySelector('nav');
+        timeline = document.querySelector('main .timeline');
         events = timeline.querySelectorAll('li').toArray();
         eventsIds = events.map(element => element.getAttribute('data-id'));
         images = document.querySelectorAll('.gallery .event').toArray();

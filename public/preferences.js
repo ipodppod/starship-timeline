@@ -40,7 +40,7 @@
 
     function render() {
         renderTemplate('nav-loop', createContext()).then(html => {
-            document.querySelector('main nav').innerHTML = html;
+            document.querySelector('main .timeline').innerHTML = html;
             window.scrolling.restart();
         });
     }
