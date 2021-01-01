@@ -54,7 +54,7 @@ ul {
 .timeline.hide-subject ul li {
     padding-left: 25px;
 }
-.timeline ul li.active::after {
+.timeline ul li.current::after {
     content: '';
     display: block;
     width: calc(100% + 50px);
@@ -64,7 +64,7 @@ ul {
     top: 0;
     z-index: -1;
 }
-.timeline ul li.active::after {
+.timeline ul li.current::after {
     background-color: #ffdf0087;
 }
 

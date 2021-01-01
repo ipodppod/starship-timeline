@@ -24,8 +24,8 @@
         const progress = document.body.scrollTop / (document.body.scrollHeight - window.innerHeight);
         const index = Math.min(Math.floor((events.length) * progress), events.length-1);
         if (index != currentIndex) {
-            markSingle(events, index, 'active');
-            throttle(50, () => markSingle(images, imagesIds.indexOf(eventsIds[index]), 'active'));
+            markSingle(events, index, 'current');
+            throttle(50, () => markSingle(images, imagesIds.indexOf(eventsIds[index]), 'current'));
             currentIndex = index;
         }
     }

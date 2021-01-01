@@ -48,7 +48,7 @@ body:not(.show-preferences) main menu li[name="close"] {
     width: 100%;
     height: calc(100vh);
 }
-.gallery .event:not(.active) {
+.gallery .event:not(.current) {
     visibility: hidden;
 }
 .gallery .event .image {
