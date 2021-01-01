@@ -5,7 +5,7 @@ const sort = require('sort-array')
 const engine = new liquid.Engine()
 const template = fs.readFileSync('./source/index.liquid').toString()
 const data = jsonfile.readFileSync('./data.json')
-const filesystem = new liquid.LocalFileSystem('./source/templates', 'liquid');
+const filesystem = new liquid.LocalFileSystem('./source/snippets', 'liquid');
 
 data.events.forEach(event => {
     event.date = new Date(event.date);
@@ -25,14 +25,14 @@ engine.registerFilters({
     }
 })
 
-const templates = {};
+const snippets = {};
 fs.readdirSync(filesystem.root).forEach(file => {
-    templates[file.replace('.liquid', '')] = fs.readFileSync(filesystem.root+'/'+file).toString()
+    snippets[file.replace('.liquid', '')] = fs.readFileSync(filesystem.root+'/'+file).toString()
 })
 
 const context = {
     timeline: data,
-    templates: templates
+    snippets: snippets
 }
 
 engine.registerFileSystem(filesystem)

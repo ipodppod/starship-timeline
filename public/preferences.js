@@ -39,13 +39,16 @@
     }
 
     function render() {
-        const template = document.querySelector('template[name="nav-loop"]').innerHTML;
+        renderTemplate('nav-loop', createContext()).then(html => {
+            document.querySelector('main nav').innerHTML = html;
+            window.scrolling.restart();
+        });
+    }
+
+    function renderTemplate(name, context) {
+        const template = document.querySelector('template[name="'+name+'"]').innerHTML;
         const engine = new window.liquidjs.Liquid();
-        engine.parseAndRender(template, createContext())
-            .then(html => {
-                document.querySelector('main nav').innerHTML = html;
-                window.scrolling.restart();
-            });
+        return engine.parseAndRender(template, context);
     }
 
     function createContext() {

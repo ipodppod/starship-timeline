@@ -13,11 +13,11 @@
         window.timeline = {{ timeline | json }};
     </script>
 
-    {% for template in templates %}
-        {% assign template_name = template[0] %}
-        {% assign template_content = template[1] %}
-        <template name="{{ template_name }}">
-            {{ template_content }}
+    {% for snippet in snippets %}
+        {% assign snippet_name = snippet[0] %}
+        {% assign snippet_content = snippet[1] %}
+        <template name="{{ snippet_name }}">
+            {{ snippet_content }}
         </template>
     {% endfor %}
 
