@@ -3,7 +3,6 @@ const liquid = require('liquid')
 const jsonfile = require('jsonfile')
 const sort = require('sort-array')
 const engine = new liquid.Engine()
-const template = fs.readFileSync('./source/index.liquid').toString()
 const data = jsonfile.readFileSync('./data.json')
 const filesystem = new liquid.LocalFileSystem('./source/snippets', 'liquid');
 
@@ -37,6 +36,11 @@ const context = {
 
 engine.registerFileSystem(filesystem)
 
-engine
-  .parseAndRender(template, context)
-  .then(html => fs.writeFileSync('./public/index.html', html))
+fs.readdirSync('./source').forEach(file => {
+    if (file.endsWith('.liquid')) {
+        const template = fs.readFileSync('./source/'+file).toString()
+        engine
+          .parseAndRender(template, context)
+          .then(html => fs.writeFileSync('./public/'+file.replace('liquid', 'html'), html))
+    }
+})
