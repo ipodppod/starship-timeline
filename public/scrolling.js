@@ -13,13 +13,14 @@
 
     function restart(timeline) {
         const attr = name => element => element.getAttribute(name);
+        const famousVehicles = Object.keys(timeline.hall_of_fame);
         events = document.querySelectorAll('main .timeline li').toArray();
         eventsIds = events.map(attr('data-id'));
         images = document.querySelectorAll('.gallery .event').toArray();
         vehicles = document.querySelectorAll('.gallery .vehicle').toArray();
         vehicleNames = vehicles.map(attr('data-vehicle'));
         imagesIds = images.map(attr('data-id'));
-        statusPerEvent = prepareStatusOfAllVehiclesForEachEvent(timeline.events);
+        statusPerEvent = prepareStatusOfAllVehiclesForEachEvent(timeline.events, famousVehicles);
         currentIndex = null;
         render();
     }
@@ -45,7 +46,7 @@
         currentIndex = index;
     }
 
-    function prepareStatusOfAllVehiclesForEachEvent(events) {
+    function prepareStatusOfAllVehiclesForEachEvent(events, famous) {
         const status = {};
         const lastOfVehicle = vehicle => events.where('vehicle', vehicle).last();
         let stop = null;
@@ -54,7 +55,7 @@
                 delete(status[stop]);
             }
             status[event.vehicle] = event;
-            if (event == lastOfVehicle(event.vehicle)) {
+            if (famous.includes(event.vehicle) && event == lastOfVehicle(event.vehicle)) {
                 stop = event.vehicle;
             }
             return { ...status };
