@@ -28,6 +28,10 @@
             preferences.time_direction = e.detail.button.name;
             render();
         }
+        if (e.detail.buttonset.getAttribute('name') == 'split-view' && e.detail.pressed) {
+            document.body.classList[e.detail.button.name == 'on' ? 'add' : 'remove']('split-view');
+            render();
+        }
     })
 
     function addOrRemoveFromPreferences(property, name, add) {
@@ -39,9 +43,10 @@
     }
 
     function render() {
-        renderTemplate('nav-loop', createContext()).then(html => {
+        const context = createContext()
+        renderTemplate('nav-loop', context).then(html => {
             document.querySelector('main .timeline').innerHTML = html;
-            window.scrolling.restart();
+            window.scrolling.restart(context);
         });
     }
 

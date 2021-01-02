@@ -36,7 +36,8 @@ body:not(.show-preferences) main menu li[name="close"] {
     position: fixed;
     top: 0;
     right: 0;
-    width: calc(100vw - 340px);
+    --gallery-width: calc(100vw - 340px);
+    width: var(--gallery-width);
     height: 100vh;
     z-index: 0;
     background: black;
@@ -47,9 +48,11 @@ body:not(.show-preferences) main menu li[name="close"] {
     left: 0;
     width: 100%;
     height: calc(100vh);
-}
-.gallery .event:not(.current) {
     visibility: hidden;
+}
+.gallery .event.current,
+body.split-view .gallery .event.most-recent {
+    visibility: visible;
 }
 .gallery .event .image {
     position: absolute;
@@ -67,6 +70,7 @@ body:not(.show-preferences) main menu li[name="close"] {
     font-size: 11px;
     color: white;
     font-weight: 200;
+    white-space: nowrap;
 }
 .gallery .event .details > * {
     display: inline-block;
@@ -83,6 +87,24 @@ body:not(.show-preferences) main menu li[name="close"] {
 }
 .gallery .event .details .credit {
     text-transform: lowercase;
+}
+
+body.split-view .gallery {
+    display: flex;
+}
+body.split-view .gallery .vehicle {
+    width: calc(100% / var(--number-of-active-vehicles));
+    transition: 0.5s width;
+    position: relative;
+    overflow: hidden;
+}
+body.split-view .gallery .vehicle:not(.active) {
+    width: 0;
+}
+body.split-view .gallery .image {
+    width: var(--gallery-width);
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 

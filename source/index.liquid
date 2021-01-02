@@ -29,6 +29,11 @@
                 <button name="forward" class="pressed">Chronological</button>
                 <button name="backwards">Latest First</button>
             </buttonset>
+            <h3>Split-View Mode</h3>
+            <buttonset name="split-view" class="switch">
+                <button name="off" class="pressed">Off</button>
+                <button name="on">On</button>
+            </buttonset>
             <h3>Vehicles</h3>
             <div class="checkboxes shorts" name="vehicles">
                 {% assign vehicles = timeline.events | map: 'vehicle' | unique %}

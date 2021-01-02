@@ -1,20 +1,26 @@
-{% for event in events %}
-    <div class="event" data-id="{{ event.id }}">
-        <div class="image" style="background-image: url({{ event.picture }});"></div>
-        <div class="details">
-            <span class="date">{{ event.date | date: "%B %e, %Y" }}</span><br>
-            <span class="title">
-                {% if event.type == "MILESTONE" %}
-                    <strong>Milestone</strong>
-                    {{ event.notes }}
-                {% else %}
-                    <strong>{{ event.vehicle }}</strong>
-                    {{ event_types[event.type] }}
-                {% endif %}
-            </span><br/>
-            <div class="credit">
-                credit: <a target="_blank" href="{{ event.source }}">{{ event.credit }}</a>
+{% assign vehicles = events | map: 'vehicle' | unique %}
+{% for vehicle in vehicles %}
+    <div class="vehicle" data-vehicle="{{ vehicle }}">
+        {% assign vehicle_events = events | where: 'vehicle', vehicle %}
+        {% for event in vehicle_events %}
+            <div class="event" data-id="{{ event.id }}">
+                <div class="image" style="background-image: url({{ event.picture }});"></div>
+                <div class="details">
+                    <span class="date">{{ event.date | date: "%B %e, %Y" }}</span><br>
+                    <span class="title">
+                        {% if event.type == "MILESTONE" %}
+                            <strong>Milestone</strong>
+                            {{ event.notes }}
+                        {% else %}
+                            <strong>{{ event.vehicle }}</strong>
+                            {{ event_types[event.type] }}
+                        {% endif %}
+                    </span><br/>
+                    <div class="credit">
+                        credit: <a target="_blank" href="{{ event.source }}">{{ event.credit }}</a>
+                    </div>
+                </div>
             </div>
-        </div>
+        {% endfor %}
     </div>
 {% endfor %}
