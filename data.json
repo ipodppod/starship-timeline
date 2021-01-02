@@ -380,6 +380,14 @@
             "picture": "./pictures/sn9-pad.jpg",
             "credit": "RGV Aerial Photography",
             "source": "https://twitter.com/RGVaerialphotos/status/1341526260422479872"
+        },
+        {
+            "date": "2021-01-02",
+            "vehicle": "SN 10",
+            "type": "STACKING_ENDS",
+            "picture": "https://pbs.twimg.com/media/Eqvr_9sXcAQxwfm?format=jpg&name=large",
+            "credit": "BocaChicaGal",
+            "source": "https://twitter.com/BocaChicaGal/status/1345428410013769729"
         }
     ]
 }
