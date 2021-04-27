@@ -83,17 +83,23 @@
         markMultiple(vehicles, names.map(index), cls);
     }
 
-    function markImagePerVehicle(status, cls) {
+    function markImagePerVehicle(status) {
         const index = name => vehicleNames.indexOf(name)
         Object.entries(status).forEach(([vehicle, event]) => {
-            markEvent(vehicles[index(vehicle)].children.toArray(), event.id, cls);
+            markEvent(vehicles[index(vehicle)].children.toArray(), event.id);
         });
     }
 
-    function markEvent(collection, id, cls) {
+    function markEvent(collection, id) {
+        let before = true;
+        let after = false;
         collection.forEach(element => {
-            const action = element.getAttribute('data-id') == id ? 'add' : 'remove';
-            element.classList[action](cls);
+            const match = element.getAttribute('data-id') == id;
+            match && (before = false);
+            element.classList[before ? 'add' : 'remove']('before-most-recent');
+            element.classList[match ? 'add' : 'remove']('most-recent');
+            element.classList[after ? 'add' : 'remove']('after-most-recent');
+            match && (after = true);
         });
     }
 

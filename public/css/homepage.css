@@ -104,13 +104,18 @@ body.split-view .gallery .vehicle:not(.active) {
 }
 body.split-view .gallery .event {
     height: 100vh;
-    transition: 0.5s height;
-    position: relative;
+    transition: 0.5s top;
     overflow: hidden;
     visibility: visible;
 }
-body.split-view .gallery .event:not(.most-recent) {
-    height: 0;
+body.split-view .gallery .event.most-recent {
+    top: 0
+}
+body.split-view .gallery .event.before-most-recent {
+    top: -100vh;
+}
+body.split-view .gallery .event.after-most-recent {
+    top: 100vh;
 }
 body.split-view .gallery .image {
     width: var(--gallery-width);
