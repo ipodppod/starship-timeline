@@ -22,7 +22,8 @@
         "SN 6": "LAUNCH",
         "SN 7": "RUD",
         "SN 7.1": "RUD",
-        "SN 8": "LAUNCH"
+        "SN 8": "LAUNCH",
+        "SN 9": "LAUNCH"
     },
     "events": [
         {
@@ -388,6 +389,22 @@
             "picture": "https://pbs.twimg.com/media/Eqvr_9sXcAQxwfm?format=jpg&name=large",
             "credit": "BocaChicaGal",
             "source": "https://twitter.com/BocaChicaGal/status/1345428410013769729"
+        },
+        {
+            "date": "2021-02-02",
+            "vehicle": "SN 9",
+            "type": "LAUNCH",
+            "picture": "./pictures/sn9-launch.jpg",
+            "credit": "spacex",
+            "source": "https://spacex.com"
+        },
+        {
+            "date": "2021-02-02",
+            "vehicle": "SN 9",
+            "type": "RUD",
+            "picture": "./pictures/sn9-rud.jpg",
+            "credit": "Lab Padre",
+            "source": "https://www.youtube.com/channel/UCFwMITSkc1Fms6PoJoh1OUQ"
         }
     ]
 }
