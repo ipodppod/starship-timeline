@@ -29,7 +29,7 @@
         "SN 12": "STACKING_ENDS",
         "SN 13": "STACKING_ENDS",
         "SN 14": "STACKING_ENDS",
-        "SN 14": "ROLL_TO_LAUNCH_PAD"
+        "SN 15": "ROLL_TO_LAUNCH_PAD"
     },
     "events": [
         {
