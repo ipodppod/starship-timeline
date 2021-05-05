@@ -95,14 +95,31 @@ body.split-view .gallery {
 body.split-view .gallery .vehicle {
     width: calc(100% / var(--number-of-active-vehicles));
     transition: 0.5s width;
+    transition-delay: 0.5s;
     position: relative;
     overflow: hidden;
 }
 body.split-view .gallery .vehicle:not(.active) {
     width: 0;
 }
+body.split-view .gallery .event {
+    height: 100vh;
+    transition: 0.5s top;
+    overflow: hidden;
+    visibility: visible;
+}
+body.split-view .gallery .event.most-recent {
+    top: 0
+}
+body.split-view .gallery .event.before-most-recent {
+    top: -100vh;
+}
+body.split-view .gallery .event.after-most-recent {
+    top: 100vh;
+}
 body.split-view .gallery .image {
     width: var(--gallery-width);
+    height: 100vh;
     left: 50%;
     transform: translateX(-50%);
 }
